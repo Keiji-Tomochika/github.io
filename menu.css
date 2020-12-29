@@ -1,0 +1,88 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+header h1{
+  color:white;
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+}
+
+
+/*https://allabout.co.jp/gm/gc/23911/3/*/
+
+
+
+/*メニューバー装飾*/
+.container{
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+}
+/*メインメニュー項目装飾*/
+ul.container .item{
+  width: 25%;
+  display: inline-block;
+  list-style: none;
+  position: relative;
+ 
+}
+
+ul.container a{
+color: white;
+background-color: blue;
+line-height: 40px;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+display: block;
+}
+
+ul.container a:hover{
+  background-color: cornflowerblue;
+  color:white;
+}
+
+
+
+/*サブメニュー装飾*/
+ul.container ul {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
+
+/*サブメニューありの時に開く処理*/
+ul.container li:hover ul{
+  display: inline-block;
+}
+
+/*サブメニュー項目装飾*/
+ul.container ul li{
+  width: 300px;
+  border-top: 1px solid pink;
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.container ul li a{
+  line-height: 35px;
+  text-align: center;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+ul.container ul li a:hover{
+  background-color: #ffff80;
+  color: #005500;
+}
+
+main .main-photo{
+  width: 500px;
+  height: 350px;
+}
